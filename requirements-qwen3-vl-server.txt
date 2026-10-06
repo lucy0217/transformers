@@ -1,0 +1,4 @@
+accelerate
+fastapi
+pillow
+uvicorn
