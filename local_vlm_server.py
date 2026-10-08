@@ -13,7 +13,7 @@ from transformers import AutoProcessor, Qwen3VLForConditionalGeneration
 
 
 DEFAULT_MODEL_PATH = (
-    "/data/home/x_long32/workspace/models/Qwen3-VL-4B-Instruct"
+    "/data/home/x_long32/workspace/models/Qwen3-VL-8B-Instruct"
 )
 
 app = FastAPI(title="Local Transformers VLM")
