@@ -795,7 +795,11 @@ else:
 
 
 _HUB_KERNEL_MAPPING: dict[str, dict[str, str]] = {
-    "finegrained-fp8": {"repo_id": "kernels-community/finegrained-fp8", "version": 4},
+    # Pin the validated v4 snapshot so cached FP8 inference can start with HF_HUB_OFFLINE=1.
+    "finegrained-fp8": {
+        "repo_id": "kernels-community/finegrained-fp8",
+        "revision": "0e5764aa5c27d0f005117a92645156481540950a",
+    },
     "deep-gemm": {"repo_id": "kernels-community/deep-gemm", "version": 2},
     "sonic-moe": {"repo_id": "kernels-community/sonic-moe", "revision": "ep-support"},
     "nvfp4": {"repo_id": "kernels-community/nvfp4-gemm", "version": 1},
